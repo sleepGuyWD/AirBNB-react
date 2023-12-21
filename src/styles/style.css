@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background: #272e34;
+}
+nav {
+  background: #21222a;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+
+.navLeft,
+.navRight {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+
+.navLeft {
+  display: flex;
+}
+
+img {
+  height: 2rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.navTitle {
+  color: #5dd8f8;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.navRight {
+  display: flex;
+  justify-content: right;
+}
+
+.courseTitle {
+  color: white;
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+
+main {
+  height: 100%;
+  
+  padding: 3.5rem 1.6rem;
+  color: white;
+  background-image: url(../public/img/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  color: white;
+  margin-top: auto;
+  height: 10rem;
+}
+
+footer > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  background-color: lightgrey;
+}
+
+ul {
+  max-width: 450px;
+}
+
+ul li {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  padding-bottom: 1rem;
+  font-size: 2.4rem;
+}
+
+ul li::marker {
+  color:#5dd8f8;
+  font-size: 1.5rem;
+}
+
+
+
