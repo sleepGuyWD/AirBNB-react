@@ -56,6 +56,8 @@ nav {
   font-weight: 600;
   font-size: 2.25rem;
   padding: .5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero--sectionLower > p {
@@ -64,12 +66,22 @@ nav {
   width: 55%;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
   margin: 2rem;
   font-size: .75rem;
   display: flex;
   flex-direction: column;
   width: 11rem;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column;
 }
 
 .bottom {
@@ -94,4 +106,5 @@ nav {
 
 .bold {
   font-weight: 600;
+  margin-top: auto;
 }
