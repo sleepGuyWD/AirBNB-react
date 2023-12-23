@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Card from './components/card'
 import data from './data'
+import TopFaves from './components/topfaves'
 
 
 function App() {
@@ -10,18 +11,14 @@ function App() {
     return (
       <Card 
         key={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
+        {...item}
       />
     )
   })
   
   return (
     <div className="container">
+      <TopFaves />
       <Navbar />
       <Hero /> 
       <section className="cards-list">
